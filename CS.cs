@@ -52,7 +52,7 @@ class Zadania
             Console.Write($"Ocena {i}: ");
             suma += double.Parse(Console.ReadLine()!);
         }
-
+        
         double avg = suma / n;
         Console.WriteLine($"Średnia: {avg:F2}  {(avg >= 3.0 ? "Uczeń zdał." : "Uczeń nie zdał.")}");
     }
@@ -76,11 +76,9 @@ class Zadania
                 case "3": Zadanie3(); break;
                 default: Console.WriteLine("Nieprawidłowa opcja."); break;
             }
-
             Console.Write("Czy chcesz powtórzyć? (t/n): ");
             powtorz = Console.ReadLine()!.ToLower() == "t";
         }
-
         Console.WriteLine("Do widzenia!");
     }
 }
